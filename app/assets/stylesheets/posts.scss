@@ -1,0 +1,69 @@
+body{
+  
+header{
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  display: flex;
+  position: relative;
+}
+
+  h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 500px;
+  }
+
+  .twitter-share-button{
+    color:blue;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 30px;
+  }
+
+  .header__right-postbtn{
+    color:lime;
+    margin: 40px;
+    font-size: 20px;
+    padding-left: 300px;
+  }
+
+  .header__right-logoutbtn{
+    color:lime;
+    margin: 40px;
+    font-size: 20px;
+  }
+
+  .header-right-loginbtn{
+    color:blue;
+    margin: 40px;
+    font-size: 20px;
+    padding-left: 300px;
+  }
+
+  .header-right-registerbtn{
+    color:blue;
+    margin: 40px;
+    font-size: 20px;
+  }
+
+
+  
+main{
+  width: 100%;
+  height: 610px;
+  background-color:yellow;
+}
+
+  .Troubledman{
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+  }
+
+footer{
+  width: 100%;
+  height: 90px;
+  background-color:orange;
+}
+}

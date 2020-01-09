@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>テスト</title>
+  </head>
+  <body>
+    <header>
+      <h1>お悩み相談所</h1>
+        <a class="twitter-share-button"
+        href="https://twitter.com/share"
+        data-size="large"
+        data-url="https://dev.twitter.com/web/tweet-button"
+        data-via="twitterdev"
+        data-related="twitterapi,twitter"
+        data-hashtags="example,demo"
+        data-text="custom share text"
+        data-size="large"
+        data-lang="ja"
+        data-dnt="true">
+        このサイトをツイートしてみる?
+        </a>
+      <% if user_signed_in? %>
+          <%= link_to "新規投稿", new_post_path, class: "header__right-postbtn" %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right-logoutbtn" %>
+      <% else %>    
+      <%= link_to "ログイン",new_user_session_path,class: "header-right-loginbtn"%>
+      <%= link_to "新規登録",new_user_registration_path,class: "header-right-registerbtn"%>
+      <% end %>
+    </header>
+    <main>
+      <img src="https://1.bp.blogspot.com/-dRoN0OU5mZA/Xbo7tvtWHLI/AAAAAAABV58/41hK1-YdDTs7Ha_lo8g2UzRYqAEtOk_KQCNcBGAsYHQ/s1600/yaruki_nai_suit_man.png"alt=""class="
+Troubledman">
+    </main>
+    <footer></footer>
+  </body>
+</html>
