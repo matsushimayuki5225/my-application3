@@ -1,113 +1,131 @@
 body{
   
-header{
-  width: 100%;
-  height: 90px;
-  background-image: url(https://coconala.akamaized.net/coconala-public-files/service_images/original/9b546f5b-1390633.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position:860px;
-  display: flex;
-  position: relative;
-}
-  
-  .title-left{
-    position: relative;
-    width: 25%;
-  }
-  
-    .title-left p{
-      position: absolute;
-      color:black;
-      top: 10px;
-      left: 10px;
-    }
-
-    .title-left img{
-      width: 62%;
+    header{
+      width: 100%;
       height: 90px;
-    }
-
-  .title-name{
-    font-size: 50px;
-    margin-top: 10px;
-    margin-left: 20px;
-    color:#D0B0FF;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-
-  .twitter-share-button{
-    color:blue;
-    font-size: 20px;
-    position: absolute;
-    padding-top: 30px;
-  }
-
-  .header__right-postbtn{
-    color:lime;
-    margin: 20px;
-    font-size: 20px;
-    padding-left: 200px;
-  }
-
-  .header__right-logoutbtn{
-    color:lime;
-    margin: 20px;
-    font-size: 20px;
-  }
-
-  .header-right-loginbtn{
-    color:blue;
-    margin: 20px;
-    font-size: 20px;
-    padding-left: 200px;
-  }
-
-  .header-right-registerbtn{
-    color:blue;
-    margin: 20px;
-    font-size: 20px;
-  }
-  
-main{
-  width: 100%;
-  height: 1800px;
-  background-color:yellow;
-}
-  .main-sentence{
-    display: flex;
-  }
-    .main-content{
-      padding: 180px;
-      font-size:30px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-image: url(https://coconala.akamaized.net/coconala-public-files/service_images/original/9b546f5b-1390633.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position:860px;
+      display: flex;
       position: relative;
-    }
- 
-      .main-content--image{
-        width: 60%;
-        height: 60%;
-        float: right;
-        margin-bottom:800px;
-        margin-left: 670px;
-        margin-bottom: 200px;
-        border-radius: 60px;
-        position: absolute;
+    
+      
+      .title-left{
+        position: relative;
+        width: 25%;
+      }
+      
+        .title-left p{
+          position: absolute;
+          color:black;
+          top: 10px;
+          left: 10px;
         }
 
-      .main-content--image__bottom{
-        width: 60%;
-        height: 70%;
-        float: right;
-        margin-left: 680px;
-        margin-top: 20px;
-        border-radius: 60px;
-        position: absolute;
+        .title-left img{
+          width: 62%;
+          height: 90px;
+        }
+
+      .title-name{
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: 20px;
+        color:#D0B0FF;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
-  
-footer{
-  width: 100%;
-  height: 90px;
-  background-color:orange;
-}
+
+      .twitter-share-button{
+        color:blue;
+        font-size: 20px;
+        position: absolute;
+        padding-top: 30px;
+      }
+
+      .header__right-postbtn{
+        color:lime;
+        margin: 20px;
+        font-size: 20px;
+        padding-left: 200px;
+      }
+
+      .header__right-logoutbtn{
+        color:lime;
+        margin: 20px;
+        font-size: 20px;
+      }
+
+      .header-right-loginbtn{
+        color:blue;
+        margin: 20px;
+        font-size: 20px;
+        padding-left: 200px;
+      }
+
+      .header-right-registerbtn{
+        color:blue;
+        margin: 20px;
+        font-size: 20px;
+      }
+    }
+    main{
+      width: 100%;
+      height: 1900px;
+      background-color:yellow;
+    
+      .main-sentence{
+        display: flex;
+      }
+        .main-content{
+          padding: 180px;
+          font-size:30px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          position: relative;
+        }
+    
+          .main-content--image{
+            width: 60%;
+            height: 60%;
+            float: right;
+            margin-bottom:800px;
+            margin-left: 670px;
+            margin-bottom: 200px;
+            border-radius: 60px;
+            position: absolute;
+          }
+
+          .main-content--image__bottom{
+            width: 60%;
+            height: 70%;
+            float: right;
+            margin-left: 680px;
+            margin-top: 20px;
+            border-radius: 60px;
+            position: absolute;
+          }
+          .btn-square {
+            display: inline-block;
+            padding: 1em 6em;
+            text-decoration: none;
+            background: #668ad8;/*ボタン色*/
+            color: #FFF;
+            font-size: 20px;
+            border-bottom: solid 4px #627295;
+            border-radius: 3px;
+            margin-left: 180px;
+          }
+
+          .btn-square:active {
+            /*ボタンを押したとき*/
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*下に動く*/
+            border-bottom: none;/*線を消す*/
+          }
+    }
+    footer{
+      width: 100%;
+      height: 90px;
+      background-color:orange;
+    }
 }
