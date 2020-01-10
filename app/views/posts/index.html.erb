@@ -6,31 +6,33 @@
   </head>
   <body>
     <header>
-      <h1>お悩み相談所</h1>
-        <a class="twitter-share-button"
-        href="https://twitter.com/share"
-        data-size="large"
-        data-url="https://dev.twitter.com/web/tweet-button"
-        data-via="twitterdev"
-        data-related="twitterapi,twitter"
-        data-hashtags="example,demo"
-        data-text="custom share text"
-        data-size="large"
-        data-lang="ja"
-        data-dnt="true">
-        このサイトをツイートしてみる?
-        </a>
-      <% if user_signed_in? %>
+      <div class=title-left>
+        <img src="https://regeld.com/desi/wp-content/uploads/2019/07/heart_d_pink.png">
+        <p>独立行政法人ハートスマイル</p>
+      </div>
+      <div class=title-image></div>
+      <div class=title-name>お悩み相談クリニック</div>
+        <% if user_signed_in? %>
           <%= link_to "新規投稿", new_post_path, class: "header__right-postbtn" %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right-logoutbtn" %>
-      <% else %>    
-      <%= link_to "ログイン",new_user_session_path,class: "header-right-loginbtn"%>
-      <%= link_to "新規登録",new_user_registration_path,class: "header-right-registerbtn"%>
-      <% end %>
+        <% else %>    
+          <%= link_to "ログイン",new_user_session_path,class: "header-right-loginbtn"%>
+          <%= link_to "新規登録",new_user_registration_path,class: "header-right-registerbtn"%>
+        <% end %>
     </header>
     <main>
-      <img src="https://1.bp.blogspot.com/-dRoN0OU5mZA/Xbo7tvtWHLI/AAAAAAABV58/41hK1-YdDTs7Ha_lo8g2UzRYqAEtOk_KQCNcBGAsYHQ/s1600/yaruki_nai_suit_man.png"alt=""class="
-Troubledman">
+      <div class=main-sentence>
+        <div class=main-content>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuMEoMUjyPaX-FPaJTUITHxx5E4GI7N1LZTwpR21DR0ei-iDeD"alt=""class="main-content--image">
+          <ul>
+            <li>学校で孤独を感じる…</li>
+            <li>職場での人間関係が不安…</li>
+            <li>気分が良くなく、憂鬱な日々が多い…</li>
+            <li>疲れているのに、眠れない…</li> 
+            <li>などのお悩み</li>
+          </ul>  
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
