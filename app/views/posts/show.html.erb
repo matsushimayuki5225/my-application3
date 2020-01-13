@@ -1,0 +1,47 @@
+
+
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>テスト</title>
+  </head>
+  <body>
+    <header> <div class=title-left>
+        <img src="https://regeld.com/desi/wp-content/uploads/2019/07/heart_d_pink.png">
+        <%# <%= link_to "独立行政法人ハートスマイル", post_path, class: "title-left__heading" %>
+        <div class=title-left__heading>トップに戻る</div>
+      </div>
+      <div class=title-image></div>
+      <div class=title-name>お悩み相談クリニック</div>
+        <% if user_signed_in? %>
+          <%= link_to "メッセージ相談", new_post_path, class: "header__right-postbtn" %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right-logoutbtn" %>
+        <% else %>
+          <%= link_to "ログイン",new_user_session_path,class: "header-right-loginbtn"%>
+          <%= link_to "新規登録",new_user_registration_path,class: "header-right-registerbtn"%>
+        <% end %>
+    </header>
+    <main>
+      <div class=main-description>
+      <div class=main-description--content>
+          <img src="http://www.officework.co.jp/wp/wp-content/uploads/2016/09/building1.jpg"alt=""class="main-description--content__image">
+          <ul>
+            <li>概要</li>
+            <li>事業名: 独立行政法人ハートスマイル</li>
+            <li>事業許可日: 2018年6月14日</li>
+            <li>住所:  東京都品川区〇〇市123-9  品川ビル3階</li>
+            <li>設立日: 2020年4月1日</li>
+            <li> 従業員：16名</li>
+            <li>在籍精神科医: 5名</li>
+            
+            
+          </ul>  
+        </div>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
