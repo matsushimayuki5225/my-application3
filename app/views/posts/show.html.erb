@@ -1,0 +1,126 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>事業概要の紹介</title>
+  </head>
+  <body>
+    <header> <div class=title-left>
+        <img src="https://regeld.com/desi/wp-content/uploads/2019/07/heart_d_pink.png">
+        <%= link_to "トップページに戻る", root_path, class: "title-left__heading"%>
+      </div>
+      <div class=title-image></div>
+      <div class=title-name>お悩み相談クリニック</div>
+        <% if user_signed_in? %>
+          <%= link_to "メッセージ相談", new_post_path, class: "header__right-postbtn" %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right-logoutbtn" %>
+        <% else %>
+          <%= link_to "ログイン",new_user_session_path,class: "header-right-loginbtn"%>
+          <%= link_to "新規登録",new_user_registration_path,class: "header-right-registerbtn"%>
+        <% end %>
+    </header>
+    <main>
+      <div class=main-description>
+      <div class=main-description--content>
+          <img src="http://www.officework.co.jp/wp/wp-content/uploads/2016/09/building1.jpg"alt=""class="main-description--content__image">
+          <ul>
+            <li>概要</li>
+            <li>事業社名: 独立行政法人ハートスマイル</li>
+            <li>事業許可日: 2018年6月14日</li>
+            <li>住所:  東京都品川区〇〇市123-9  品川ビル3階</li>
+            <li>設立日: 2020年4月1日</li>
+            <li> 従業員数(精神科医、メンタルケア心理士を除く)：17名</li>
+            <li>在籍精神科医: 8名</li>
+            <li>在籍メンタルケア心理士：6名</li>
+          </ul>  
+      </div>
+      </div>
+        <div class=receptiontitle>営業時間のご案内</div>
+          <table class=receptiontime>
+            <tbody>
+              <tr>
+                <th>営業時間</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th class="sat">土</th>
+                <th class="sun">日</th>
+              </tr>
+              <tr>
+                <td>10:00〜13:00</td>
+                <td>●</td><!-- 月 -->
+                <td>●</td><!-- 火 -->
+                <td>ー</td><!-- 水 -->
+                <td>●</td><!-- 木 -->
+                <td>●</td><!-- 金 -->
+                <td>●</td><!-- 土 -->
+                <td>ー</td><!-- 日 -->
+              </tr>
+              <tr>
+                <td>14:00〜18:30</td>
+                <td>●</td><!-- 月 -->
+                <td>●</td><!-- 火 -->
+                <td>ー</td><!-- 水 -->
+                <td>●</td><!-- 木 -->
+                <td>●※</td><!-- 金 -->
+                <td>●</td><!-- 土 -->
+                <td>ー</td><!-- 日 -->
+              </tr>
+            </tbody>
+          </table>
+          <div class=receptionnote>
+            <ul>
+              <li>※第三金曜日は社内研修のため、対応が遅れますので、ご了承下さい</li>
+              <li>・2020年９月8日は品川ビルの定期メンテナンスのため休業とさせて頂きます</li>
+              <li>・2020年12月29日〜2021年1月3日まで休業とさせて頂きます</li>
+            </ul> 
+          </div>
+      <div class=main-salutation>ご挨拶</div>
+      <div class=main-sentence>
+      <div class=main-sentence__content>
+          <img src="https://www.photolibrary.jp/mhd1/img569/450-20180215075020354484.jpg"alt=""class="main-sentence__content__image">
+          <ul>
+            <li>独立行政法人ハートスマイル理事兼精神科医代表
+            <ruby>
+            松<rt>まつ</rt>
+            本<rt>もと</rt>
+            浩<rt>こう</rt>
+            介<rt>すけ</rt>
+            </ruby>
+            </li>
+            <li>1962年 東京大学  医学部卒業</li>
+            <li>1970年 鬱病と認知症について日本初の研究を実施</li>
+            <li>1978年 名古屋精神医療大学で教授として勤務</li>
+            <li>1990年 症例の少ない乖離性ショック病の研究を実施</li>
+            <li>1998年 WHO(世界保健機関)で精神疾患医師として勤務</li>
+            <li>2020年 独立行政法人ハートスマイル理事兼精神科医代表に就任</li>
+          </ul>  
+      </div>
+      </div>
+      <div class=main-sentence2>
+      <div class=main-sentence__content2>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAXYAilL3NwZwLjPn9mnv05t-uGslEHqwEypFahRriQp-8HTwv"alt=""class="main-sentence__content__image2">
+          <ul>
+            <li>独立行政法人ハートスマイルメンタルケア心理士主任
+            <ruby>
+            中<rt>なか</rt>
+            村<rt>むら</rt>
+            美<rt>み</rt>
+            咲<rt>さき</rt>
+            </ruby>
+            </li>
+            <li>2013年 名古屋大学  医学部卒業 </li>
+            <li>2015年 福岡女子医療大学 医療精神学部 教授として勤務</li>
+            <li>2016年 全国7箇所で精神診断クリニック活動を行う</li>
+            <li>2020年 立行政法人ハートスマイルメンタルケア心理士主任に就任</li>
+          </ul>  
+      </div>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

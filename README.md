@@ -1,24 +1,38 @@
-# README
+# my アプリ DB設計
+## users テーブル
+### 相談を受けたいユーザーの情報
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|username|string||
 
-Things you may want to cover:
+### Association
+-has_many :messages
+-has_many :comments
 
-* Ruby version
 
-* System dependencies
+## messages テーブル
+### ユーザーが医師に対してのメッセージ発信
+Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|text|text|null: false|
+|users_id|integer|null:false,foreign_key: true|
 
-* Configuration
+### Association
+-belongs_to :user
+-has_many :comments
 
-* Database creation
+## conmments テーブル
+### 医師がユーザーに対してのメッセージ返信
+Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|message_id|integer|null: false, foreign_key: true|
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+-belong_to :user
+-belong_to :message
