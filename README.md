@@ -4,7 +4,8 @@
 
 Column|Type|Options|
 |------|----|-------|
-|email|string|null: false|
+|email|string|null: false| 
+## 名前なしで、emailが同じの場合、区別が付かない
 |password|string|null: false|
 |username|string||
 
@@ -17,7 +18,6 @@ Column|Type|Options|
 ### ユーザーが医師に対してのメッセージ発信
 Column|Type|Options|
 |------|----|-------|
-|email|string|null: false|
 |text|text|null: false|
 |users_id|integer|null:false,foreign_key: true|
 
