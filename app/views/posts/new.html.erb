@@ -1,1 +1,38 @@
-<h1>移動完了</h1>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>テスト</title>
+  </head>
+  <body>
+    <header>
+      <div class=title-left>
+        <img src="https://regeld.com/desi/wp-content/uploads/2019/07/heart_d_pink.png">
+        <%= link_to "トップページに戻る", root_path, class: "title-left__heading"%>
+      </div>
+      <div class=title-image></div>
+      <div class=title-name>お悩み相談クリニック</div>
+        <% if user_signed_in? %>
+           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header-right--logoutbtn---consultation" %>
+        <% end %>
+    </header>
+    <main>
+      <div class="contents row">
+      <div class="container">
+        <%= form_with(model: @post, local: true) do |form| %>
+        <h3>
+          お悩み相談メッセージフォーム
+        </h3>
+        <%# <div class="from"> %>
+          <%= form.text_field :name, placeholder: "Nickname" %>
+          <%= form.text_area :text, placeholder: "text" , rows: "10" %>
+         <%= link_to "SEND",messages_path,class: "header-right-registerbtn"%>
+        <%# </div> %>
+        <% end %>
+      </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
