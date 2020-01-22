@@ -1,3 +1,72 @@
-h1{
-  color:red;
+body{
+  
+  header{
+    width: 100%;
+    height: 90px;
+    background-image: url(https://coconala.akamaized.net/coconala-public-files/service_images/original/9b546f5b-1390633.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:860px;
+    display: flex;
+    position: relative;
+  
+    
+    .title-left{
+      position: relative;
+      width: 25%;
+    }
+    
+      .title-left__heading{
+        position: absolute;
+        color:black;
+        top: 10px;
+        left: 10px;
+      }
+
+      .title-left img{
+        width: 62%;
+        height: 90px;
+      }
+
+    .title-name{
+      font-size: 50px;
+      margin-top: 10px;
+      margin-left: 20px;
+      color:#D0B0FF;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .twitter-share-button{
+      color:blue;
+      font-size: 20px;
+      position: absolute;
+      padding-top: 30px;
+    }
+
+
+
+    .header-right--logoutbtn---consultation{
+      color:lime;
+      padding-left: 200px;
+      font-size: 20px;
+      margin: 30px;
+    } 
+  }
+  main{
+    width: 100%;
+    height: 1900px;
+    background-color:yellow;
+  }  
+
+  .text_area{
+    width:500px;
+
+  }
+
+  footer{
+      width: 100%;
+      height: 90px;
+      background-color:orange;
+  } 
+
 }
