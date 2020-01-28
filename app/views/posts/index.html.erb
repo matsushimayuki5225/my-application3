@@ -15,6 +15,7 @@
       <div class=title-image></div>
       <div class=title-name>お悩み相談クリニック</div>
         <% if user_signed_in? %>
+         
           <%= link_to "メッセージ相談", new_post_path, class: "header__right-postbtn" %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right-logoutbtn" %>
         <% else %>

@@ -19,20 +19,21 @@
     <main>
       <div class="contents row">
       <div class="container">
-        <%= form_with(model: @post, local: true) do |form| %>
-        <h3>
-          お悩み相談メッセージフォーム
-        </h3>
-        <%# <div class="from"> %>
-          <%= form.text_field :name, placeholder: "Nickname" %>
-          <%= form.text_area :text, placeholder: "text" , rows: "10" %>
-         <%= link_to "SEND",messages_path,class: "header-right-registerbtn"%>
-        <%# </div> %>
+        <h1>お悩み相談メッセージフォーム</h1>
+        <%= form_tag('/posts', method: :post,) do %> 
+        <%= label_tag :ニックネーム「入力必須」%>
+        <%= text_field_tag :nickname %>
+        <div class="label_tag"><%= label_tag :相談したいメッセージはこちら「入力必須」%></div>
+        <%= text_area_tag :message, '' , class:'text_area_tag'%>
+        <div class="from-text-btn"><%= submit_tag "入力したメッセージ送る？" %></div>
         <% end %>
+        
       </div>
       </div>
+      
     </main>
     <footer>
+
     </footer>
   </body>
 </html>
